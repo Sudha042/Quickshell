@@ -1,0 +1,222 @@
+/* Dropdown Styling */
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .dropdown-button .icon {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+   
+  .dropdown-button {
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Adjusts distribution */
+    width: 120px;
+    /* Define a width for consistent alignment */
+  }
+
+/* .dropdown-container {
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    width: 100%;
+  } */
+  
+  /* .dropdown-row {
+    display: flex;
+    gap: 15px;
+  } */
+  
+  /* .dropdown-grouping, .dropdown-ordering {
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  .dropdown select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .user-avatar-circle {
+    width: 25px;        /* Width of the circle */
+    height: 25px;       /* Height of the circle */
+    border-radius: 50%; /* Make it a circle */
+    display: flex;      /* Flexbox for centering the text */
+    justify-content: center;
+    align-items: center;
+    color: white;       /* Text color */
+    font-weight: bold;  /* Bold font for the letter */
+    font-size: 18px;    /* Font size of the letter */
+  }
+  
+  
+  /* Kanban Board */
+  .kanban-board {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    overflow-x: scroll  ;
+  }
+  
+  .kanban-column {
+    min-width: 350px;
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .ticket-card {
+    background-color: rgba(255, 255, 255, 0.877);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ticket-id {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.385);
+  }
+  
+  .user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .ticket-footer {
+    display: flex; 
+    justify-content:initial;
+    margin-top: 10px;
+  }
+  
+  .priority-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  /* Priority levels */
+  .priority-4 {
+    background-color: red;
+  }
+  
+  .priority-3 {
+    background-color: orange;
+  }
+  
+  .priority-2 {
+    background-color: yellow;
+  }
+  
+  .priority-1 {
+    background-color: green;
+  }
+  
+  .priority-0 {
+    background-color: gray;
+  }
+  
+  .feature-label {
+    background-color: #f4f4f4;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.385);
+  }
+  
+/* new  */
+
+
+  .dropdown {
+    display: none;
+    /* Hide the dropdown initially */
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    /* Ensure the dropdown is wider than the button */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1;
+    top: 100%;
+    /* Position it directly below the button */
+    left: 0;
+    /* Align to the left of the button */
+    margin-top: 8px;
+    /* Add some space between the button and dropdown */
+  }
+  
+  /* Show the dropdown on button click */
+  .dropdown-container:hover .dropdown,
+  .dropdown-container:focus-within .dropdown {
+    display: block;
+    /* Show the dropdown on hover or focus */
+  }
+  
+  /* Dropdown Sections Styling */
+  .dropdown-row {
+    margin-bottom: 15px;
+  }
+  
+  .dropdown-row:last-child {
+    margin-bottom: 0;
+  }
+  
+  .dropdown-row label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #374151;
+  }
+  
+  .dropdown-row select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    color: #374151;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: white;
+  }
+  
+  .dropdown-row select:focus {
+    outline: none;
+    border-color: #4f46e5;
+  }
+  
+  /* Dropdown Hover & Focus Effects */
+  .dropdown-button:hover {
+    border-color: #4f46e5;
+  }
+  
+  .dropdown select:hover,
+  .dropdown select:focus {
+    border-color: #4f46e5;
+  }
